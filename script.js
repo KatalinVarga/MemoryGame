@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const restartText = document.getElementById('restart-text'); // Updated ID for the restart text
 
     const images = [];
-    const imagePath = '/imgs/'; 
+    const imagePath = 'imgs/'; 
     for (let i = 1; i <= 18; i++) {
         
 images.push({src: imagePath + `${i}A.png`, id: i});
