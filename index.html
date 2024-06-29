@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dharma+Gothic:wght@700&display=swap">
+</head>
+<body>
+    <div class="game-container">
+        <div class="menu">
+            <div class="title">SDGs Memory Game </div>
+            <span id="restart-text" class="restart-text">Restart</span>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        <div class="grid" id="grid"></div>
+    </div>
+    <audio id="pairSound" src="sound/card.wav"></audio>
+    <audio id="winSound" src="sound/claps.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
