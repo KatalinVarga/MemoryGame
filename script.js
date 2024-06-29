@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const images = [];
     for (let i = 1; i <= 18; i++) {
-        images.push({src: `imgs/${i}A.png`, id: i});
-        images.push({src: `imgs/${i}B.png`, id: i});
+        images.push({src: `.imgs/${i}A.png`, id: i});
+        images.push({src: `.imgs/${i}B.png`, id: i});
     }
 
     let score = 0;
