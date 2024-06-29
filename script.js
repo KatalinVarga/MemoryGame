@@ -31,7 +31,7 @@ images.push({src: imagePath + `${i}B.png`, id: i});
             const tile = document.createElement('div');
             tile.classList.add('tile');
             tile.dataset.id = image.id;
-            tile.innerHTML = `<img src="${image.src}" alt="Image ${image.id}">`;
+            tile.innerHTML = `<img src="${imagePath + `${i}A.png}" alt="Image ${image.id}">`;
             tile.addEventListener('click', flipTile);
             grid.appendChild(tile);
         });
