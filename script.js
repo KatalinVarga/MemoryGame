@@ -6,12 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const restartText = document.getElementById('restart-text'); // Updated ID for the restart text
 
     const images = [];
-    const imagePath = '/imgs/'; 
     for (let i = 1; i <= 18; i++) {
-        
-images.push({src: imagePath + `${i}A.png`, id: i});
-images.push({src: imagePath + `${i}B.png`, id: i});
-    
+        images.push({src: `imgs/${i}A.png`, id: i});
+        images.push({src: `imgs/${i}B.png`, id: i});
+    }
+
     let score = 0;
     let firstTile = null;
     let secondTile = null;
@@ -31,7 +30,7 @@ images.push({src: imagePath + `${i}B.png`, id: i});
             const tile = document.createElement('div');
             tile.classList.add('tile');
             tile.dataset.id = image.id;
-            tile.innerHTML = `<img src="${imagePath + `${i}A.png}" alt="Image ${image.id}">`;
+            tile.innerHTML = `<img src="${image.src}" alt="Image ${image.id}">`;
             tile.addEventListener('click', flipTile);
             grid.appendChild(tile);
         });
